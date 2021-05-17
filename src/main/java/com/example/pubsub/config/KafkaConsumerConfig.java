@@ -26,7 +26,6 @@ public class KafkaConsumerConfig {
       props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
       props.put(ConsumerConfig.GROUP_ID_CONFIG, "json");
       props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-      //return new DefaultKafkaConsumerFactory<>(props);
       
       JsonDeserializer<Object> deserializer = new JsonDeserializer<Object>();
     		  
